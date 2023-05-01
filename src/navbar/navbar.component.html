@@ -1,0 +1,33 @@
+<div id="navbarId">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <a class="navbar-brand" href="/"><img class="logo" src="assets/LOGOnoBG.png"> </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+          (click)="toggleNavbar()">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" [ngClass]="{ 'show': isCollapsed }">
+          <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                  <a class="nav-link" (click)="toggleNavbar()" routerLink="home">Home
+                      <span class="sr-only">(current)</span>
+                  </a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" (click)="toggleNavbar()" routerLink="products">Products</a>
+              </li>
+              <li class="nav-item" routerLinkActive="active">
+                  <a class="nav-link" (click)="toggleNavbar()" routerLink="contact">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" (click)="toggleNavbar()" routerLink="dev"> Trial Page</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link"> <a style="color: green;" role="text"><i class="fa fa-whatsapp fa-lg "></i>
+                          +91 8921618495</a>
+                  </a>
+              </li>
+          </ul>
+      </div>
+  </nav>
+</div>

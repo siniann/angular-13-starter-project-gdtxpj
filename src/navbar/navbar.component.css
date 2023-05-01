@@ -1,0 +1,32 @@
+.logo {
+  max-height: 4.5rem;
+  padding: 0.05rem 0.5rem 0.5rem;
+}
+
+.navbar {
+  background-color: rgb(243, 240, 236);
+}
+
+#navbar img {
+  text-align: center;
+}
+
+/* Navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 20px;
+  text-decoration: solid;
+}
+
+.nav-container {
+  background-color: black;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+}
+
+.navigation-bar .w3-top {
+  background: white;
+}
